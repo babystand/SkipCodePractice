@@ -1,0 +1,32 @@
+﻿/*.container{*/
+    /*height: 200px;*/
+    /*position: relative;*/
+    /*border: 3px solid green;*/
+/*}*/
+.prompt-box{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    height: 300px;
+    width: 500px;
+    text-align: center;
+}
+h1{
+    font-size: 5em;
+    margin: 50px auto 1px auto;
+}
+button{
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+}
+input{
+    height: 30px;
+    width: 200px;
+    font-size: 1.5em;
+    text-align: center;
+}

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\thech\.Rider2018.3\config\extensions" t="IncludeRecursive" />
-    <e p="C:\Users\thech\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\thech\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_src.-324904036.00" t="ExcludeRecursive" />
-    <e p="C:\Users\thech\Development\SkipCodePractice\src" t="IncludeRecursive">
+    <e p="C:\Users\ui0177\.Rider2018.3\config\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\ui0177\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\ui0177\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_src.531566915.00" t="ExcludeRecursive" />
+    <e p="C:\Users\ui0177\Dev\Personal\SkipCodePractice\src" t="IncludeRecursive">
       <e p="App.fs" t="Include" />
       <e p="App.fsproj" t="IncludeRecursive" />
       <e p="bin" t="ExcludeRecursive" />
