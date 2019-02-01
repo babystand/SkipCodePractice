@@ -19,12 +19,15 @@ type Dictionary = {
                     size : int
                     kanji : DictEntry []
                   }
+type AnswerState = | Unanswered | Correct | Incorrect
 type Model = {
               prompt : string
               answer : string
               input : string
               valid : bool
               dict : Dictionary
+              score : int
+              answerState : AnswerState
               }
 
 type Msg =
@@ -36,7 +39,7 @@ type Msg =
  | SetInputValue of string
  | CheckValid
 
-let init() = { prompt = ""; answer = ""; input = ""; valid = false; dict = { size = 0; kanji = [||] } }, Cmd.ofMsg FetchDictionary
+let init() = { prompt = ""; answer = ""; input = ""; valid = false; score = 0; answerState = Unanswered; dict = { size = 0; kanji = [||] } }, Cmd.ofMsg FetchDictionary
 let fetchDictionary() : JS.Promise<Dictionary> =
     promise {
         let! res = fetch "/dict.json" []
@@ -54,8 +57,14 @@ let rec update (msg : Msg) (model : Model) =
         model, Cmd.none
     | FetchNewQuery ->
             let rand : DictEntry = model.dict.kanji.[Random().Next(model.dict.size)]
-            { model with prompt = rand.literal; answer = rand.skipCode; input = "" }, Cmd.none
-    | TryAnswer -> model, Cmd.none
+            { model with prompt = rand.literal; answer = rand.skipCode; input = ""; answerState = Unanswered }, Cmd.none
+    | TryAnswer ->
+                  if model.answerState <> Unanswered then model, Cmd.ofMsg FetchNewQuery
+                  else
+                   if not model.valid then { model with answerState = Incorrect; score = 0; }, Cmd.none
+                   else
+                       if model.input = model.answer then { model with answerState = Correct; score = model.score + 1 }, Cmd.none
+                       else { model with answerState = Incorrect; score = 0 }, Cmd.none
     | SetInputValue s -> { model with input = s }, Cmd.ofMsg CheckValid
     | CheckValid ->
         if Regex.Match(model.input, "[1-4]{1}[-]{1}[1-9]+[0-9]*[-]{1}[1-9]+[0-9]*").Success then
@@ -66,19 +75,25 @@ let rec update (msg : Msg) (model : Model) =
 // VIEW (rendered with React)
 
 let view (model : Model) dispatch =
-    div [ Class "container" ]
-      [
-        div [ Class "prompt-box" ] [
-                h2 [ Id "kanji-prompt" ] [ str model.prompt ]
-                br []
-                input [ Id "skip-code-answer"
-                        Typeof "text"
-                        Pattern "[1-4]{1}[-]{1}[1-9]+[0-9]*[-]{1}[1-9]+[0-9]*"
-                        OnChange(fun ev -> ev.Value |> SetInputValue |> dispatch)
-                       ]
-                br []
-                button [ Id "skip-code-submit"; OnClick(fun _ -> dispatch (TryAnswer)) ] [ str "Answer" ]
-                button [ Id "skip-code-next"; OnClick(fun _ -> dispatch FetchNewQuery) ] [ str "Next" ]
+    div [ Class "top-level" ] [
+        div [ Class "container" ]
+          [
+            div [ Class "prompt-box" ] [
+                    h2 [ Id "kanji-prompt" ] [ str model.prompt ]
+                    br []
+                    input [ Id "skip-code-answer"
+                            Typeof "text"
+                            Pattern "[1-4]{1}[-]{1}[1-9]+[0-9]*[-]{1}[1-9]+[0-9]*"
+                            OnChange(fun ev -> ev.Value |> SetInputValue |> dispatch)
+                           ]
+                    br []
+                    
+                    button [ Id "skip-code-submit"; OnClick(fun _ -> dispatch (TryAnswer)) ] [ (if model.answerState = Unanswered then (str "Answer") else (str "Next"))]
+                    button [ Id "skip-code-next"; OnClick(fun _ -> dispatch FetchNewQuery) ] [ str "Next" ]
+            ]
+          ]
+        div [ Class "score-box" ] [
+            span [] [str <| string model.score]
         ]
       ]
 

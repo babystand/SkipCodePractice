@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c78fcbb4-e3c0-438c-965b-c824bce1766c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.App/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.App/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/../public/site.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.App/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.App/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.fs" beforeDir="false" afterPath="$PROJECT_DIR$/App.fs" afterDir="false" />
     </list>
@@ -20,31 +18,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App.fs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1422">
-              <caret line="79" column="44" lean-forward="true" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
+            <state relative-caret-position="-540">
+              <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
               <folding>
-                <marker date="1548913936194" expanded="true" signature="11:2816" ph=" ..." />
-                <marker date="1548913936194" expanded="true" signature="17:227" ph="..." />
-                <marker date="1548913936194" expanded="true" signature="252:346" ph="= { ..." />
-                <marker date="1548913936194" expanded="true" signature="364:459" ph="= { ..." />
-                <marker date="1548913936194" expanded="true" signature="471:638" ph="= { ..." />
-                <marker date="1548913936194" expanded="true" signature="649:797" ph="= ..." />
-                <marker date="1548913936194" expanded="true" signature="652:797" ph="| FetchDictionary ..." />
-                <marker date="1548913936194" expanded="true" signature="951:1078" ph=" : JS.Promise&lt;Dictionary&gt; = ..." />
-                <marker date="1548913936194" expanded="true" signature="992:1077" ph=" ..." />
-                <marker date="1548913936194" expanded="true" signature="1133:1949" ph=" = ..." />
-                <marker date="1548913936194" expanded="true" signature="1154:1949" ph=" ..." />
-                <marker date="1548913936194" expanded="true" signature="1347:1431" ph=" -&gt; ..." />
-                <marker date="1548913936194" expanded="true" signature="1451:1634" ph=" -&gt; ..." />
-                <marker date="1548913936194" expanded="true" signature="1758:1949" ph=" -&gt; ..." />
-                <marker date="1548913936194" expanded="true" signature="2015:2696" ph=" = ..." />
-                <marker date="1548913936194" expanded="true" signature="2055:2695" ph=" ..." />
-                <marker date="1548913936194" expanded="true" signature="2092:2687" ph=" ..." />
-                <marker date="1548913936194" expanded="true" signature="2198:2446" ph=" [ Id &quot;skip-code-answer&quot; ..." />
+                <marker date="1548997747751" expanded="true" signature="11:3716" ph=" ..." />
+                <marker date="1548997747751" expanded="false" signature="17:227" ph="..." />
+                <marker date="1548997747751" expanded="true" signature="252:346" ph="= { ..." />
+                <marker date="1548997747751" expanded="true" signature="364:459" ph="= { ..." />
+                <marker date="1548997747751" expanded="true" signature="525:758" ph="= { ..." />
+                <marker date="1548997747751" expanded="true" signature="769:917" ph="= ..." />
+                <marker date="1548997747751" expanded="true" signature="772:917" ph="| FetchDictionary ..." />
+                <marker date="1548997747751" expanded="true" signature="1108:1235" ph=" : JS.Promise&lt;Dictionary&gt; = ..." />
+                <marker date="1548997747751" expanded="true" signature="1149:1234" ph=" ..." />
+                <marker date="1548997747751" expanded="true" signature="1290:2574" ph=" = ..." />
+                <marker date="1548997747751" expanded="true" signature="1311:2574" ph=" ..." />
+                <marker date="1548997747751" expanded="true" signature="1504:1588" ph=" -&gt; ..." />
+                <marker date="1548997747751" expanded="true" signature="1608:1817" ph=" -&gt; ..." />
+                <marker date="1548997747751" expanded="true" signature="1833:2294" ph=" -&gt; ..." />
+                <marker date="1548997747751" expanded="true" signature="1986:2294" ph=" then { model with answerState = Incorrect }, Cmd.none ..." />
+                <marker date="1548997747751" expanded="true" signature="2129:2294" ph=" then { model with answerState = Correct }, Cmd.none ..." />
+                <marker date="1548997747751" expanded="true" signature="2383:2574" ph=" -&gt; ..." />
+                <marker date="1548997747751" expanded="true" signature="2640:3596" ph=" = ..." />
+                <marker date="1548997747751" expanded="true" signature="2674:3595" ph=" ..." />
+                <marker date="1548997747751" expanded="true" signature="2720:3493" ph=" ..." />
+                <marker date="1548997747751" expanded="true" signature="2761:3481" ph=" ..." />
+                <marker date="1548997747751" expanded="true" signature="2879:3143" ph=" [ Id &quot;skip-code-answer&quot; ..." />
+                <marker date="1548997747751" expanded="true" signature="3530:3587" ph=" ..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../public/site.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -60,24 +72,44 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/../public/site.css" />
         <option value="$PROJECT_DIR$/App.fs" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="SolutionExplorer" proportions="" version="1">
+    <navigator currentView="FileSystemExplorer" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer" />
+      <pane id="FileSystemExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="src" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="App" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="true" />
       </pane>
       <pane id="AssemblyExplorer" />
     </panes>
@@ -86,6 +118,7 @@
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../public/site.css" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
@@ -114,11 +147,12 @@
       <updated>1548901215040</updated>
       <workItem from="1548901216439" duration="3410000" />
       <workItem from="1548912082757" duration="1878000" />
+      <workItem from="1548996564212" duration="1259000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5288000" />
+    <option name="totallyTimeSpent" value="6547000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -130,9 +164,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1057" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.51859957" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17270789" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -150,9 +184,8 @@
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Unit Tests" order="12" />
-      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="13" visible="true" weight="0.32896176" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
-      <window_info anchor="right" id="Elm" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info active="true" anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.25" />
@@ -160,6 +193,7 @@
       <window_info anchor="right" id="Errors In Solution" order="4" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" id="Unit Tests Coverage" order="6" />
+      <window_info anchor="right" id="Elm" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,28 +214,40 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/App.fs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1422">
-          <caret line="79" column="44" lean-forward="true" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
+        <state relative-caret-position="-540">
+          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
           <folding>
-            <marker date="1548913936194" expanded="true" signature="11:2816" ph=" ..." />
-            <marker date="1548913936194" expanded="true" signature="17:227" ph="..." />
-            <marker date="1548913936194" expanded="true" signature="252:346" ph="= { ..." />
-            <marker date="1548913936194" expanded="true" signature="364:459" ph="= { ..." />
-            <marker date="1548913936194" expanded="true" signature="471:638" ph="= { ..." />
-            <marker date="1548913936194" expanded="true" signature="649:797" ph="= ..." />
-            <marker date="1548913936194" expanded="true" signature="652:797" ph="| FetchDictionary ..." />
-            <marker date="1548913936194" expanded="true" signature="951:1078" ph=" : JS.Promise&lt;Dictionary&gt; = ..." />
-            <marker date="1548913936194" expanded="true" signature="992:1077" ph=" ..." />
-            <marker date="1548913936194" expanded="true" signature="1133:1949" ph=" = ..." />
-            <marker date="1548913936194" expanded="true" signature="1154:1949" ph=" ..." />
-            <marker date="1548913936194" expanded="true" signature="1347:1431" ph=" -&gt; ..." />
-            <marker date="1548913936194" expanded="true" signature="1451:1634" ph=" -&gt; ..." />
-            <marker date="1548913936194" expanded="true" signature="1758:1949" ph=" -&gt; ..." />
-            <marker date="1548913936194" expanded="true" signature="2015:2696" ph=" = ..." />
-            <marker date="1548913936194" expanded="true" signature="2055:2695" ph=" ..." />
-            <marker date="1548913936194" expanded="true" signature="2092:2687" ph=" ..." />
-            <marker date="1548913936194" expanded="true" signature="2198:2446" ph=" [ Id &quot;skip-code-answer&quot; ..." />
+            <marker date="1548997747751" expanded="true" signature="11:3716" ph=" ..." />
+            <marker date="1548997747751" expanded="false" signature="17:227" ph="..." />
+            <marker date="1548997747751" expanded="true" signature="252:346" ph="= { ..." />
+            <marker date="1548997747751" expanded="true" signature="364:459" ph="= { ..." />
+            <marker date="1548997747751" expanded="true" signature="525:758" ph="= { ..." />
+            <marker date="1548997747751" expanded="true" signature="769:917" ph="= ..." />
+            <marker date="1548997747751" expanded="true" signature="772:917" ph="| FetchDictionary ..." />
+            <marker date="1548997747751" expanded="true" signature="1108:1235" ph=" : JS.Promise&lt;Dictionary&gt; = ..." />
+            <marker date="1548997747751" expanded="true" signature="1149:1234" ph=" ..." />
+            <marker date="1548997747751" expanded="true" signature="1290:2574" ph=" = ..." />
+            <marker date="1548997747751" expanded="true" signature="1311:2574" ph=" ..." />
+            <marker date="1548997747751" expanded="true" signature="1504:1588" ph=" -&gt; ..." />
+            <marker date="1548997747751" expanded="true" signature="1608:1817" ph=" -&gt; ..." />
+            <marker date="1548997747751" expanded="true" signature="1833:2294" ph=" -&gt; ..." />
+            <marker date="1548997747751" expanded="true" signature="1986:2294" ph=" then { model with answerState = Incorrect }, Cmd.none ..." />
+            <marker date="1548997747751" expanded="true" signature="2129:2294" ph=" then { model with answerState = Correct }, Cmd.none ..." />
+            <marker date="1548997747751" expanded="true" signature="2383:2574" ph=" -&gt; ..." />
+            <marker date="1548997747751" expanded="true" signature="2640:3596" ph=" = ..." />
+            <marker date="1548997747751" expanded="true" signature="2674:3595" ph=" ..." />
+            <marker date="1548997747751" expanded="true" signature="2720:3493" ph=" ..." />
+            <marker date="1548997747751" expanded="true" signature="2761:3481" ph=" ..." />
+            <marker date="1548997747751" expanded="true" signature="2879:3143" ph=" [ Id &quot;skip-code-answer&quot; ..." />
+            <marker date="1548997747751" expanded="true" signature="3530:3587" ph=" ..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../public/site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
         </state>
       </provider>
     </entry>

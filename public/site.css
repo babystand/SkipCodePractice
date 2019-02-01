@@ -15,6 +15,15 @@
     width: 500px;
     text-align: center;
 }
+.score-box{
+    border: 1px solid black;
+    float: right;
+    top: 0;
+    right: 0;
+    height: 100px;
+    width: 400px;
+    font-size: 100%;
+}
 h1{
     font-size: 5em;
     margin: 50px auto 1px auto;
