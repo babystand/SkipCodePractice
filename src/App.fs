@@ -10,6 +10,19 @@ open Fable.PowerPack.Fetch
 open System
 open System.Text.RegularExpressions
 // MODEL
+type QuestionState = Unanswered | Correct | Incorrect
+type QuestionModel = {
+    Question : string
+    Answer : string
+    Input : string
+    State : QuestionState
+}
+type ScoreModel = {
+    Score : int
+    HighScore : int
+}
+let initScore = {Score = 0; HighScore = 0}
+
 type DictEntry = {
                   literal : string
                   skipCode : string
@@ -19,6 +32,26 @@ type Dictionary = {
                     size : int
                     kanji : DictEntry []
                   }
+type LoadedState = {
+    Dictionary : Dictionary
+    Question : QuestionModel
+    Score : ScoreModel
+}
+
+type StateModel = Unloaded | Loaded of LoadedState
+type Message =
+    | FetchDictionary
+    | FailDictionary of exn
+    | LoadDictionary of Dictionary
+    | FetchNewQuery
+    | RestartTest
+    | TryAnswer
+    | SetInputValue of string
+    | CheckValid
+    
+    
+//----------
+
 type AnswerState = | Unanswered | Correct | Incorrect
 type Model = {
               prompt : string
@@ -87,13 +120,13 @@ let view (model : Model) dispatch =
                             OnChange(fun ev -> ev.Value |> SetInputValue |> dispatch)
                            ]
                     br []
-                    
-                    button [ Id "skip-code-submit"; OnClick(fun _ -> dispatch (TryAnswer)) ] [ (if model.answerState = Unanswered then (str "Answer") else (str "Next"))]
-                    button [ Id "skip-code-next"; OnClick(fun _ -> dispatch FetchNewQuery) ] [ str "Next" ]
+
+                    button [ Id "skip-code-submit"; OnClick(fun _ -> dispatch (TryAnswer)) ] [ (if model.answerState = Unanswered then (str "Answer") else (str "Next")) ]
+                    button [ Id "skip-code-next"; OnClick(fun _ -> dispatch FetchNewQuery) ] [ str "Restart" ]
             ]
           ]
         div [ Class "score-box" ] [
-            span [] [str <| string model.score]
+            span [] [ str <| string model.score ]
         ]
       ]
 
