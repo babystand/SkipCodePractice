@@ -104,7 +104,11 @@ let view (model : Model) dispatch =
           [
             div [ Class "prompt-box" ] [
                     h1 [ Id "kanji-prompt" ] [ str m.Question.Prompt ]
-                    br []
+                    (match m.Question.State with
+                     | Unanswered -> div [Class "unanswered"] [str "Waiting"]
+                     | Correct -> div [Class "correct"] [str "Correct"]
+                     | Incorrect -> div [Class "incorrect"] [str m.Question.Answer]
+                     )
                     input [ Id "skip-code-answer"
                             Typeof "text"
                             Pattern "[1-4]{1}[-]{1}[1-9]+[0-9]*[-]{1}[1-9]+[0-9]*"
@@ -118,9 +122,9 @@ let view (model : Model) dispatch =
             ]
           ]
         div [ Class "score-box" ] [
-            span [] [ str <| string m.Score.Score ]
+            span [] [ str <| "Score: " + string m.Score.Score ]
             br []
-            span [] [ str <| string m.Score.HighScore ]
+            span [] [ str <| "Highscore: " + string m.Score.HighScore ]
         ]
       ]
 

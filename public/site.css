@@ -3,6 +3,10 @@
     /*position: relative;*/
     /*border: 3px solid green;*/
 /*}*/
+body{
+    background: #222;
+    color: #e5e5d5;
+}
 .prompt-box{
     margin: 0;
     position: absolute;
@@ -10,28 +14,49 @@
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    border: 1px solid black;
-    height: 300px;
+    height: 400px;
     width: 500px;
     text-align: center;
+    font-family: Noto Sans CJK JP, Meiryo, sans-serif;
 }
 .score-box{
-    border: 1px solid black;
+    text-align: right;
     float: right;
-    top: 0;
-    right: 0;
+    position: absolute;
+    top: 15px;
+    right: 15px;
     height: 100px;
     width: 400px;
-    font-size: 100%;
+    font-size: 1.4em;
+    font-family: sans-serif;
+}
+.correct, .incorrect, .unanswered{
+    margin: 15px;
+    font-size: 1.4em;
+}
+.correct{
+    color: #77bb22;
+}
+.incorrect{
+    color: #dd5555;
+}
+.unanswered{
+    color: transparent;
 }
 h1{
     font-size: 5em;
     margin: 50px auto 1px auto;
 }
 button{
+    margin: 5px;
     margin-top: 20px;
     width: 100px;
     height: 30px;
+    border-radius: 5px;
+    border: 3px #e5e5d5 solid;
+    background: #e5e5d5;
+    color: #222;
+    font-size: 1.1em;
 }
 input{
     height: 30px;
